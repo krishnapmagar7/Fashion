@@ -1,0 +1,171 @@
+body .main {
+    padding: 5% 10% 5% 10%;
+  }
+  
+  body .main .fashion {
+    background-color: white;
+  }
+  
+  body .main .fashion .text {
+    padding: 10% 5% 10% 5%;
+  }
+  
+  body .main .fashion .text .btn {
+    background-color: #b0c6d4;
+    padding: 5%;
+    width: 50%;
+    border-radius: 0;
+    margin-top: 5%;
+  }
+  
+  body .main .fashion .text .btn:hover {
+    color: #0086b8;
+  }
+  
+  body .main .fashion img {
+    width: 105%;
+    height: 100%;
+  }
+  /# sourceMappingURL=style.css.map/
+  {
+      "version": 3,
+      "mappings": "AAAA,AACI,IADA,CACA,KAAK,CAAA;EACD,OAAO,EAAE,aAAa;CAqBzB;;AAvBL,AAGQ,IAHJ,CACA,KAAK,CAED,QAAQ,CAAA;EACJ,gBAAgB,EAAE,KAAK;CAkB1B;;AAtBT,AAKY,IALR,CACA,KAAK,CAED,QAAQ,CAEJ,KAAK,CAAA;EACD,OAAO,EAAE,aAAa;CAWzB;;AAjBb,AAOgB,IAPZ,CACA,KAAK,CAED,QAAQ,CAEJ,KAAK,CAED,IAAI,CAAA;EACA,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,EAAE;EACX,KAAK,EAAE,GAAG;EACV,aAAa,EAAE,CAAC;EAChB,UAAU,EAAE,EAAE;CACjB;;AAbjB,AAcgB,IAdZ,CACA,KAAK,CAED,QAAQ,CAEJ,KAAK,CASD,IAAI,AAAA,MAAM,CAAA;EACN,KAAK,EAAE,OAAO;CACjB;;AAhBjB,AAkBY,IAlBR,CACA,KAAK,CAED,QAAQ,CAeJ,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf",
+      "sources": [
+          "style.scss"
+      ],
+      "names": [],
+      "file": "style.css"
+  }
+  body{
+      .main{
+          padding: 5% 10% 5% 10%;
+          .fashion{
+              background-color: white;
+              .text{
+                  padding: 10% 5% 10% 5%;
+                  .btn{
+                      background-color: #b0c6d4;
+                      padding: 5%;
+                      width: 50%;
+                      border-radius: 0;
+                      margin-top: 5%;
+                  }
+                  .btn:hover{
+                      color: #0086b8;
+                  }
+              }
+              img{
+                  width: 105%;
+                  height: 100%;
+              }
+          }
+      }
+  }
+/* footer starts */
+  footer{
+    width: 100%;
+    min-height: 300px;
+    max-height: auto;
+  background-image:white;
+    clear: both;
+  }
+  footer .footer-wrap{
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 9%;
+    color: white;
+  }
+  .widgetFooter{
+    width: calc(85%/3);
+    height: auto;
+    float: left;
+    padding: 2.5%;
+    text-align: left;
+  }
+  h4.uppercase{
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 20px;
+  }
+  ul#footerUsefulLink, ul#footerMediaLinks{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    text-transform: capitalize;
+  }
+  ul#footerUsefulLink li, ul#footerMediaLinks li{
+    cursor: pointer;
+    /* transition: border-bottom 3s ease-in; */
+  }
+  ul#footerUsefulLink li:hover .usefulLinksIcons, ul#footerUsefulLink li:hover a{
+     color: #00CED1;
+     /* border-bottom: 1px solid red; */
+  }
+  ul#footerMediaLinks li:hover span.fb, ul#footerMediaLinks li:hover a.fb { color: #3b5998; }
+  ul#footerMediaLinks li:hover span.twit, ul#footerMediaLinks li:hover a.twit { color: #1DA1F2; }
+  ul#footerMediaLinks li:hover span.insta, ul#footerMediaLinks li:hover a.insta { color: #ffc838; }
+ 
+   
+ 
+  div.footerCopy{
+    clear: both;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    border-top: 1px solid #ccc;
+    background: #464343;
+  }
+   
+  @media (max-width:800px){
+    footer .footer-wrap{
+      width: 100%;
+      padding: 0;
+    }
+    .widgetFooter:not(:nth-of-type(2)){
+      width: calc(90%/2);
+      text-align: center;
+      font-size: 0.9em;
+    }
+    .widgetFooter:nth-of-type(2){
+      display: none;
+    }
+    div.footerCopy{
+      font-size: 0.8em;
+    }
+  }
+  @media (max-width:600px){
+    .widgetFooter:not(:nth-of-type(2)){
+      text-align: left;
+    }
+  }
+  @media (max-width:500px){
+    footer{
+      min-height: auto;
+    }
+    .widgetFooter:not(:nth-of-type(2)){
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+    ul#footerUsefulLink, ul#footerMediaLinks{
+      display: flex;
+    }
+    ul#footerUsefulLink li, ul#footerMediaLinks li{
+      float: left;
+      flex: 1;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    ul#footerUsefulLink li a, ul#footerMediaLinks li a{
+      display: none;
+    }
+    ul#footerUsefulLink li:hover, ul#footerUsefulLink li:hover .usefulLinksIcons, ul#footerUsefulLink li:hover a{
+       color: white;
+       background-color: #00CED1;
+    }
+    ul#footerMediaLinks li.media1:hover, ul#footerMediaLinks li:hover span.fb, ul#footerMediaLinks li:hover a.fb { background-color: #3b5998; color: white; }
+    ul#footerMediaLinks li.media2:hover, ul#footerMediaLinks li:hover span.twit, ul#footerMediaLinks li:hover a.twit { background-color: #1DA1F2; color: white; }
+    ul#footerMediaLinks li.media3:hover, ul#footerMediaLinks li:hover span.insta, ul#footerMediaLinks li:hover a.insta { background-color: #ffc838; color: white; }
+   
+  }
